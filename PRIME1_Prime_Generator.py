@@ -15,7 +15,11 @@ for t in range(int(input())):
             if not(number%i):
                 stat = False
                 break
+            if i> (number**0.5)+1:
+                break
         if stat and number>1:
             primes.add(number)
-            print(number)
+            #print(number)
+    for p in primes:
+        print(p)
     print()
